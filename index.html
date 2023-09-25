@@ -25,13 +25,15 @@
 
         document.body.innerHTML += "hello";
     }
-
+    document.getElementById("button").onclick=async() => {
+        await callAPI();
+    };
 
 </script>
 Hello World
 <label>
     <input name="token" type="text">
 </label>
-<button onclick = "callAPI()" > Click Me </button>
+<button id="button" > Click Me </button>
 </body>
 
