@@ -1,0 +1,7 @@
+{
+  "name": "patrick-black-oddball.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "octokit": "^3.1.0"
+  }
+}
