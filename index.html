@@ -52,6 +52,8 @@ Hello World
             data: { login },
         } = await octokit.request("GET /user");
         alert("Hi there, " + login);
+    } else {
+        alert("nothing");
     }
 
 
