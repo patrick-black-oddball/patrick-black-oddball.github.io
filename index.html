@@ -1,5 +1,6 @@
 <script type="module">
    // import { Octokit } from "https://esm.sh/octokit";
+   import { Octokit } from "octokit";
 </script>
 <body>
 <script>
@@ -7,7 +8,7 @@
     async function callAPI() {
         alert("Started");
         let token =document.getElementById("searchTxt").value;
-        import { Octokit } from "octokit";
+
 
         const octokit = new Octokit({
             auth: token,
@@ -36,6 +37,12 @@
      */
     async function tryit() {
         alert("Tried It");
+        let token =document.getElementById("searchTxt").value;
+
+
+        const octokit = new Octokit({
+            auth: token,
+        });
     }
 </script>
 Hello World
